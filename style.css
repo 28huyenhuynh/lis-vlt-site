@@ -147,7 +147,6 @@ body::before {
     0 0 0 1px rgba(255,255,255,.6) inset,
     0 0 60px rgba(216,150,255,.25);
   overflow:hidden;
-  animation: float 6s ease-in-out infinite;
   position: relative;
 }
 
@@ -988,8 +987,6 @@ html[data-theme="dark"] .vignette{
   opacity:.9;
 }
 
-/* Your UI uses lots of rgba(255,255,255,...) fills.
-   These overrides keep the same “glass kawaii” look but darker. */
 
 html[data-theme="dark"] .browser{
   background: linear-gradient(135deg, rgba(27,16,39,.92), rgba(20,11,31,.92));
@@ -1389,5 +1386,12 @@ html[data-theme="dark"] a:hover{color:#8bf0ff}
   object-fit: cover;
   object-position: center;
 }
+
+@media (max-width: 520px){
+  .vignette{ opacity: .45; }
+  .grid{ opacity: .25; }
+  .noise{ opacity: .15; }
+}
+
 
 
