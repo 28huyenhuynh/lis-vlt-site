@@ -1388,35 +1388,25 @@ html[data-theme="dark"] a:hover{color:#8bf0ff}
 }
 
 /* ===========================
-MOBILE: FIX nền bị xám (iOS)
+   FORCE MOBILE SOLID BACKGROUND
    =========================== */
 @media (max-width: 520px){
-  .noise{
-    mix-blend-mode: normal !important;
-    opacity: .08 !important;
+
+  /* 1) Tắt hết overlay  */
+  .bg .grid,
+  .bg .vignette,
+  .bg .noise{
+    display: none !important;
   }
 
-  .vignette{
-    opacity: .12 !important;
-    background: radial-gradient(ellipse at 50% 30%, transparent 55%, rgba(45,27,61,.08) 100%) !important;
+  /* 2) Light theme: */
+  html, body{
+    background: #dbf5fe !important; /* xanh nhạt */
   }
 
-  /* grid cũng giảm */
-  .grid{ opacity: .12 !important; }
-
-.noise{ display:none !important; } *
-}
-
-/* DARK + mobile cũng cần làm nhẹ lại */
-@media (max-width: 520px){
-  html[data-theme="dark"] .noise{
-    mix-blend-mode: normal !important;
-    opacity: .06 !important;
-  }
-  html[data-theme="dark"] .vignette{
-    opacity: .20 !important;
-    background: radial-gradient(ellipse at 50% 30%, transparent 55%, rgba(0,0,0,.25) 100%) !important;
+  /* 3) Dark theme: đen tím (solid) */
+  html[data-theme="dark"], 
+  html[data-theme="dark"] body{
+    background: #140f1f !important; /* đen tím */
   }
 }
-
-
