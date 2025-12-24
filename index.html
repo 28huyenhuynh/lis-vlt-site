@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lissie ✿</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg" aria-hidden="true">
+    <div class="grid"></div>
+    <div class="vignette"></div>
+    <div class="noise"></div>
+  </div>
+
+  <main class="app">
+    <!-- Cute browser -->
+    <section class="browser reveal">
+      <header class="chrome">
+        <div class="left">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="crumb">vlt-pinned-post.com</span>
+        </div>
+
+        <div class="right">
+          <button class="mini" id="themeToggle" type="button" aria-label="Toggle theme">𖤓/☽</button>
+        </div>
+      </header>
+
+      <!-- Tabs -->
+      <nav class="tabs" aria-label="Site tabs">
+        <button class="tab active" data-tab="home" type="button">
+          <span class="tab-ico">ꔫ</span> Home
+        </button>
+        <button class="tab" data-tab="about" type="button">
+          <span class="tab-ico">✿</span> About me
+        </button>
+        <button class="tab" data-tab="byf" type="button">
+          <span class="tab-ico">✖</span> Before you follow
+        </button>
+        <button class="tab" data-tab="fandoms" type="button">
+          <span class="tab-ico">★</span> My favourites
+       </button>
+        <!-- <button class="tab" data-tab="ships" type="button">
+          <span class="tab-ico">⌦</span> Favourite ships
+        </button> -->
+
+        <div class="spacer"></div>
+        <a class="tablink" href="#" target="_blank" rel="noreferrer">+ link</a>
+      </nav>
+
+      <!-- Pages -->
+      <div class="pagewrap">
+        <!-- HOME -->
+        <section class="page show" data-page="home">
+          <div class="hero">
+            <div class="hero-left">
+              <p class="quote">“Let's go back... to our true reality.”</p>
+              <h1>Lis <span class="heart">♡</span></h1>
+              <p class="muted">
+                Tất cả thông tin bạn cần biết về mình ở đây ♡
+              </p>
+
+              <div class="chips">
+                <span class="chip">Pronouns: She/They</span>
+                <span class="chip">Timezone: GMT+7</span>
+                <span class="chip">VN/EN/JP</span>
+              </div>
+            </div>
+
+            <div class="hero-right">
+              <div class="frame">
+                <img src="images/banner.jpg" alt="banner" loading="lazy"
+                     onerror="this.closest('.frame').classList.add('missing')" />
+              </div>
+
+              <div class="iconrow">
+                <button class="icon" data-modal="images/icon1.jpg" type="button" aria-label="icon 1">
+                  <img src="images/icon1.jpg" alt="(c)" loading="lazy"
+                       onerror="this.closest('.icon').classList.add('missing')" />
+                </button>
+                <button class="icon" data-modal="images/icon2.jpg" type="button" aria-label="icon 2">
+                  <img src="images/icon2.jpg" alt="(c) Cấn Nam Ly" loading="lazy"
+                       onerror="this.closest('.icon').classList.add('missing')" />
+                </button>
+                <button class="icon" data-modal="images/icon3.jpg" type="button" aria-label="icon 3">
+                  <img src="images/icon3.jpg" alt="(c) Âu Dương Tử Hạ" loading="lazy"
+                       onerror="this.closest('.icon').classList.add('missing')" />
+                </button>
+                <button class="icon" data-modal="images/icon4.jpg" type="button" aria-label="icon 4">
+                  <img src="images/icon4.jpg" alt="(c) Cấn Nam Ly" loading="lazy"
+                       onerror="this.closest('.icon').classList.add('missing')" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="page" data-page="about">
+          <div class="sectionhead">
+            <h2>About me</h2>
+            <p class="muted">Thông tin chung về mình.</p>
+          </div>
+
+          <div class="grid2">
+            <div class="panel">
+              <ul class="list">
+                <li><b>Cách gọi:</b> Lis/Liz/VLT</li>
+                <li><b>20↑</b></li>            
+                <li><b>MBTI/Horoscope:</b> INTP 5w4, Cự Giải</li>
+                <li><b>Content:</b> Đa số là fandom 2D, đôi khi mình có đăng tranh/cover nhạc.</li>
+                </ul>
+                <div class="note"><i><b>Lưu ý:</b> Mình đang hạn chế add/acp friend requests. Tuy nhiên, nếu bạn vẫn muốn add friend thì cứ tim bài ghim cho mình biết rằng đã đọc nhé, đặc biệt là mục "Before You Follow".</i></div>              
+            </div>
+
+            <div class="panel">
+              <h3>Links</h3>
+              <div class="linkgrid">
+                <a class="linkbtn" href="https://discord.gg/qmWMNZzY" target="_blank" rel="noreferrer">Discord</a>
+                <a class="linkbtn" href="https://smule.com/Lis286" target="_blank" rel="noreferrer">Smule</a>
+                <a class="linkbtn" href="https://music.youtube.com/playlist?list=PLJLIysURaR8uuzC3V7zce8O4-do0CuC2f" target="_blank" rel="noreferrer">ShuAke Playlist</a>
+                <a class="linkbtn" href="https://www.facebook.com/share/1BXuMz4JmZ/?mibextid=wwXIfr" target="_blank" rel="noreferrer">Legit check</a>
+              </div>
+              <div class="note">Trong trường hợp cần gấp có thể liên lạc với mình qua Discord.</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FANDOMS -->
+        <section class="page" data-page="fandoms">
+ <div class="panel feature-acc">
+  <div class="feature-layout">
+    <!-- LEFT: accordion list -->
+    <div class="feature-list" id="fandomAcc">
+      <button class="feature-item is-open" data-target="enstars" data-img="images/enstars.jpg"
+        type="button">
+        <span class="feature-ico" aria-hidden="true">★</span>
+        <span class="feature-text">
+          <span class="feature-title">Ensemble Stars!!</span>
+          <span class="feature-desc">
+            And so, don't forget this light.
+          </span>
+        </span>
+      </button>
+
+      <button class="feature-item" data-target="bandori" data-img="images/bandori.jpg"
+        type="button">
+        <span class="feature-ico" aria-hidden="true">✿</span>
+        <span class="feature-text">
+          <span class="feature-title">Bandori!</span>
+          <span class="feature-desc">
+            Sing, the song that can become us.
+          </span>
+        </span>
+      </button>
+
+      <button class="feature-item" data-target="persona" data-img="images/persona.jpg"
+        type="button">
+        <span class="feature-ico" aria-hidden="true">♥</span>
+        <span class="feature-text">
+          <span class="feature-title">Persona Series</span>
+          <span class="feature-desc">
+            I'll seize our eternal light.
+          </span>
+        </span>
+      </button>
+
+      <button class="feature-item" data-target="prsk" data-img="images/prsk.jpg"
+        type="button">
+        <span class="feature-ico" aria-hidden="true">♪</span>
+        <span class="feature-text">
+          <span class="feature-title">Project Sekai</span>
+          <span class="feature-desc">
+            Light, light, just like this.
+          </span>
+        </span>
+      </button>
+
+      <button class="feature-item" data-target="game" data-img="images/game.jpg"
+        type="button">
+  <span class="feature-ico" aria-hidden="true">🂡</span>
+  <span class="feature-text">
+    <span class="feature-title">Games</span>
+    <span class="feature-desc">
+      I'll be the one spinning the thread.
+    </span>
+  </span>
+</button>
+
+      <button class="feature-item" data-target="music" data-img="images/music.jpg"
+        type="button">
+  <span class="feature-ico" aria-hidden="true">࣪☾</span>
+  <span class="feature-text">
+    <span class="feature-title">Music Projects</span>
+    <span class="feature-desc">
+      Take me with you, Messiah.
+    </span>
+  </span>
+</button>
+
+      <button class="feature-item" data-target="am" data-img="images/am.jpg"
+        type="button">
+  <span class="feature-ico" aria-hidden="true">𖦹</span>
+  <span class="feature-text">
+    <span class="feature-title">Anime/Manga/Novel</span>
+    <span class="feature-desc">
+      Maybe I can enjoy this fleeting world.
+    </span>
+  </span>
+</button>
+
+
+    </div>
+
+    <!-- RIGHT: preview window -->
+
+    <p class="swipe-hint" aria-hidden="true">
+  Vuốt sang trái/phải để xem một số series mình đang theo dõi nha ❤︎
+</p>
+    <aside class="feature-preview" aria-live="polite">
+      <div class="feature-window">
+        <div class="feature-windowbar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="feature-windowtitle" id="previewTitle">Ensemble Stars!!</span>
+        </div>
+
+        <div class="feature-windowbody">
+          <p id="mobilePreviewDesc" class="feature-mobile-desc"></p>
+
+          <img id="previewImg" class="feature-img"
+            src="images/enstars.jpg" alt="Preview image" loading="lazy"
+            onerror="this.classList.add('missing-img')" />
+
+          <div id="previewBody" class="feature-bodytext">
+            <p><b>Bias:</b> <mark class="hl-blue">Kanata, Izumi</mark>, các thành viên khác của Knights.</p>
+    <p><b>Fav units:</b> <mark class="hl-blue">Knights</mark>, Trickstar</p>
+    <p><b>Ships:</b> OTP là <mark class="hl-blue">RitsuIzu</mark> (có switch). Ngoài ra thì mình ăn tạp.</p>
+    <p>Mình thích toàn bộ các units/characters và nắm khá rõ các story trọng điểm mọi unit từ khoảng 2023 trở về trước.</p>
+    <p>Thông tin chi tiết hơn xem ở <a href ="https://www.facebook.com/share/1GtDYAEBrB/?mibextid=wwXIfr" target="_blank">đây</a>.</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Hidden detail blocks (so each fandom can be long) -->
+  <template id="enstars">
+    <p><b>Bias:</b> <mark class="hl-blue">Kanata, Izumi</mark>, các thành viên khác của Knights.</p>
+    <p><b>Fav units:</b> <mark class="hl-blue">Knights</mark>, Trickstar</p>
+    <p><b>Ships:</b> OTP là <mark class="hl-blue">RitsuIzu</mark> (có switch). Ngoài ra thì mình ăn tạp.</p>
+    <p>Mình thích toàn bộ các units/characters và nắm khá rõ các story trọng điểm mọi unit từ khoảng 2023 trở về trước.</p>
+    <p>Thông tin chi tiết hơn xem ở <a href ="https://www.facebook.com/share/1GtDYAEBrB/?mibextid=wwXIfr" target="_blank">đây</a>.</p>
+  </template>
+
+  <template id="bandori">
+    <p><b>Bias:</b> <mark class="hl-blue">Anon,</mark> Kaoru, các thành viên khác của MyGO!!!!!, Mutsumi.</p>
+    <p><b>Fav units:</b> Mình thích đều nhưng bây giờ thì focus <mark class="hl-blue">MyGO!!!!!,</mark> Ave Mujica.</p>
+    <p><b>Ships:</b> <mark class="hl-blue">AnonSoyo,</mark> KaoChisa, AllSayoAll (chủ yếu là DoubleMint), NyaMutsuMortis, ToukoRui. Mình không có NOTP và sp nhiếu ship mainstream khác.</p>
+    <p>MyGO!!!!! ep 10 is my Roman Empire.</p>
+  </template>
+
+  <template id="persona">
+    <p>Mình vừa hoàn thành playthrough đầu tiên của <mark class="hl-blue">Persona 5 Royal</mark> và đang trải nghiệm các series Persona khác, sẽ update dần theo tiến độ chơi.</p>
+    <p><b>Bias:</b> <mark class="hl-blue">Ren/Akira/Persona 5 Protagonist/Pego,</mark> Akechi, Sumire</p>
+    <p><b>Ships:</b> Ultimate OTP là <mark class="hl-blue">ShuAke</mark> KHÔNG TÁCH (switch thì thoải mái nhưng mình hay sìn ShuAke hơn một chút). Mình sp nhiều ship còn lại nhưng không quá quan trọng.</p>
+  </template>
+
+  <template id="prsk">
+    <p>Mình không còn trong fd nhưng nơi này đã từng có giá trị tinh thần cao với mình nên cũng list vào đây.</p>
+    <p><b>Bias:</b> <mark class="hl-blue">Mafuyu,</mark> Haruka</p>
+    <p><b>Fav units:</b> <mark class="hl-blue">25ji, Nightcord de.,</mark> More More Jump!, Leo/Need.</p>
+    <p><b>Ships:</b> OTP <mark class="hl-blue">MafuEna,</mark> MinoHaru. Còn lại mình cũng không kén ship nào.</p>
+    <p>Đa số các bản dịch nhạc của mình đều đã được đăng trên <a href ="https://www.facebook.com/pjskmelon" target="_blank">Dưa Gang Puroseka</a>.</p>
+  </template>
+
+  <template id="game">
+    <h3>Identity V:</h3>
+    <p>Chủ yếu thích chơi game chứ không đu fandom nhiều.</p>
+    <p><b>ID:</b> 10767246</p>
+    <p><b>Fav chars:</b> <mark class="hl-blue">Grace, Luca,</mark> Wu Chang, Tracy.</p>
+    <p><b>Ships:</b> Ăn tạp, hiện tại thích nhất là <mark class="hl-blue">ParaLock, </mark> CứuAn.</p>
+    <p> Mình có theo dõi giải. Đội tuyển yêu thích nhất của mình là <mark class="hl-blue"> Wolves.</mark></p>
+
+    <div class="custom-divider" aria-hidden="true">
+  <span>࣪˖ ࣪ ⊹ ࣪ ˖</span>
+</div>
+
+    <h3>Mahoyaku:</h3>
+    <p><b>Fav chars:</b> Thích đều nhưng hiện tại là <mark class="hl-blue">Figaro,</mark> Murr, Owen.</p>
+    <p><b>Ships:</b> CainOwen, MurrShy.</p>
+
+    <div class="custom-divider" aria-hidden="true">
+  <span>࣪˖ ࣪ ⊹ ࣪ ˖</span>
+</div>
+
+    <h3>Onmyoji:</h3>
+    <p><b>Fav chars:</b> Nhất Mục Liên.</p>
+    <p><b>Ships:</b> OTP <mark class="hl-blue">HiroCẩuHiro.</mark> NOTP <mark class="hl-blue">Cẩu//Cáo, Hiro//Seimei</mark>.</p>
+
+    <div class="custom-divider" aria-hidden="true">
+  <span>࣪˖ ࣪ ⊹ ࣪ ˖</span>
+</div>
+
+    <h3>Touken Ranbu:</h3>
+    <p><b>Fav chars + ships:</b> Anmitsu.</p>
+    <p>Ngoài ra khá thích MikaTsuru.</p>
+
+    <div class="custom-divider" aria-hidden="true">
+  <span>࣪˖ ࣪ ⊹ ࣪ ˖</span>
+</div>
+
+    <h3>Honkai: Star Rail:</h3>
+    <p><b>Bias:</b> <mark class="hl-blue">Traiblazer (nhất là Stelle),</mark> Kafka, Anaxa.</p>
+    <p><b>Ships:</b> <mark class="hl-blue">DanBlazer</mark>, EverMarch, OT3 đội tàu. Không kén BG và GL ships nhưng BL thì rất selective.</p>
+
+        <div class="custom-divider" aria-hidden="true">
+  <span>࣪˖ ࣪ ⊹ ࣪ ˖</span>
+</div>
+
+    <h3>Others:</h3>
+    <p><b>R1999:</b> KakaIsoKaka</p>
+    <p><b>FGO:</b> Tohsaka Rin, ShiRin, GilEn</p>
+    <p><b>GI:</b> Sumeru, F4 Sumeru</p>
+    <p><b>DGRP:</b> Chiaki</p>
+    <p><b>R1999:</b> KakaIsoKaka</p>
+    <p><b>Helios:</b> West Sector</p>
+    <p><b>DTW:</b> Có theo dõi nhưng mình không đặc biệt thích ai</p>
+    <p>...</p>
+    
+
+  </template>
+
+  <template id="music">
+    <h3>Hypnosic Mic:</h3>
+    <p><b>Fav chars:</b> <mark class="hl-blue">Gentarou,</mark> Hifumi.</p>
+    <p><b>Fav divisions:</b> <mark class="hl-blue">Fling Posse,</mark> Dotsuitare Hompo.</p>
+    <p><b>Ships:</b> <mark class="hl-blue">DaiGen,</mark> DoHifuDo</p>
+
+    <div class="custom-divider" aria-hidden="true">
+  <span>࣪˖ ࣪ ⊹ ࣪ ˖</span>
+</div>
+
+    <h3>Love Live!!:</h3>
+    <p><b>Fav chars:</b> <mark class="hl-blue">Maki, You,</mark> Keke, Sumire.</p>
+    <p><b>Fav groups:</b> Liella!</p>
+    <p><b>Ships:</b> <mark class="hl-blue">KekeSumi</mark> NicoMaki, MeiShiki, RikoYou, ChikaYou, ChikaYouRiko, RikoHane.</p>
+
+    <div class="custom-divider" aria-hidden="true">
+  <span>࣪˖ ࣪ ⊹ ࣪ ˖</span>
+</div>
+
+    <h3>Others:</h3>
+    <p><b>UmaMusume:</b> <mark class="hl-blue">Tachyon,</mark> TachyCafe</p>
+    <p><b>Girls Band Cry:</b> Momoka, MomoNina</p>
+    <p><b>Bocchi The Rock:</b> BoKita</p>
+    <p><b>MILGRAM:</b> Muu</p>
+    <p><b>Argonavis:</b> Argonavis, NayuRen; thích nhạc của εpsilonΦ</p>
+    <p><b>Shinymas:</b> Rinze</p>
+    <p><b>Kpop:</b> Twice (Sana)</p>
+    <p><b>Quốc nội:</b> ATVNCG (Mùa 1), CĐĐGRS (Mùa 2)</p>
+    <p><b>Nhạc kịch: </b><mark class="hl-blue">Hetamyu (IsoHiro),</mark> Enstage</p>
+    <p>...</p>
+    
+
+  </template>
+
+    <template id="am">
+    <h3>Anime/Manga:</h3>
+    <p><b>Hetalia:</b> Bias <mark class="hl-blue">England,</mark> Italy. Shipping với UK khá thoải mái nhưng mình không ăn các cp tách GerIta/HREIta</p>
+    <p><b>BSD:</b> Bias <mark class="hl-blue">Dazai,</mark> OTP <mark class="hl-blue">Shin Soukoku</mark>.</p>  
+    <p><b>Naruto:</b> OTP <mark class="hl-blue">NaruSasu,</mark> thích Team 7 nói chung, NOTP <mark class="hl-blue">Naru//Hina</mark>.</p>
+    <p><b>MadoMagi:</b> MadoHomu, KyoSaya</p>
+    <p><b>HQ:</b> Kenma, KageHina</p>
+    <p><b>CSM:</b> Denji, AllDenAll (nhưng do Movie nên khá vã DenReze); AkiAngel</p>
+    <p><b>LycoReco:</b> ChisaTaki</p>
+    <p><b>Mercury Witch:</b> SuleMio</p>
+    <p>...</p>
+
+    <div class="custom-divider" aria-hidden="true">
+  <span>࣪˖ ࣪ ⊹ ࣪ ˖</span>
+</div>
+
+   <h3>Khác:</h3>
+    <p><b>Đam mỹ: </b>Gần như tất cả truyện của Priest, nhất là <mark class="hl-blue">Liệt Hỏa Kiêu Sầu.</mark> Ngoài ra thì mình đọc rất nhiều cổ trang huyền huyễn tiên hiệp/kiếm hiệp/cung đình quyền mưu.</p>
+    <p><b>BHTT: </b><mark class="hl-blue">Dưỡng Thừa</mark>.</p>
+    <p>...</p>
+    
+
+  </template>
+</div>
+
+        </section>
+
+       <!-- Ships Cái này là kiểu gallery thích hợp đăng tranh 
+          <section class="page" data-page="ships">
+          <div class="sectionhead">
+            <h2>Favourite ships</h2>
+            <p class="muted">click pictures to zoom</p>
+          </div>
+
+          <div class="grid2">
+            <div class="panel">
+              <ul class="list">
+                <li><b>Main:</b> Ensemble Stars!!</li>
+                <li><b>Main:</b> Project Sekai</li>
+                <li><b>Also:</b> Hetalia, Love Live, Bandori, Identity V…</li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3>Gallery</h3>
+              <div class="gallery">
+                <button class="shot" data-modal="images/g1.jpg" type="button">
+                  <img src="images/g1.jpg" alt="g1" loading="lazy" onerror="this.closest('.shot').classList.add('missing')" />
+                </button>
+                <button class="shot" data-modal="images/g2.jpg" type="button">
+                  <img src="images/g2.jpg" alt="g2" loading="lazy" onerror="this.closest('.shot').classList.add('missing')" />
+                </button>
+                <button class="shot" data-modal="images/g3.jpg" type="button">
+                  <img src="images/g3.jpg" alt="g3" loading="lazy" onerror="this.closest('.shot').classList.add('missing')" />
+                </button>
+                <button class="shot" data-modal="images/g4.jpg" type="button">
+                  <img src="images/g4.jpg" alt="g4" loading="lazy" onerror="this.closest('.shot').classList.add('missing')" />
+                </button>
+                <button class="shot" data-modal="images/g5.jpg" type="button">
+                  <img src="images/g5.jpg" alt="g5" loading="lazy" onerror="this.closest('.shot').classList.add('missing')" />
+                </button>
+                <button class="shot" data-modal="images/g6.jpg" type="button">
+                  <img src="images/g6.jpg" alt="g6" loading="lazy" onerror="this.closest('.shot').classList.add('missing')" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      -->
+
+        <!-- BYF -->
+        <section class="page" data-page="byf">
+          <div class="sectionhead">
+            <h2>Before You Follow</h2>
+            <p class="muted">Ranh giới và những điều bạn cần biết.</p>
+          </div>
+          <div class="grid2">
+            <div class="panel">
+            <h3>Mình sẽ không add những người:</h3>
+            <ul class="list">
+              <li>Không phân biệt <mark class="hl-blue">thực-ảo</mark>, hay chửi rủa, shaming fetish của người khác bằng những từ như "tởm".</li>
+              <li><mark class="hl-blue">Đục thuyền</mark>, lăng mạ shipdom/fandom người khác không có lí do.</li>
+              <li>Homophobic, transphobic, misogynist, alpha male, pick me girl, kì thị nữ quyền, phản đối phá thai, và <mark class="hl-blue">các mindset</mark> tương tự.</li>
+              <li>Fan của <mark class="hl-blue">Negav</mark>, những kẻ ấm dâu hoặc quấy rối phụ nữ.</li>
+              <li>Không <mark class="hl-blue">credit</mark> tranh ảnh, sử dụng <mark class="hl-blue">Generative AI</mark>.</li>
+              <li>Ủng hộ <mark class="hl-blue">I/s/r/a/e/l</mark> và nạn diệt chủng.</li>
+              <li>Ủng hộ các chính trị gia thể hiện quan điểm <mark class="hl-blue">kinh tế quan trọng hơn nhân quyền.</mark></li>
+              <li>Cần thì sẽ update thêm.</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Important Notice:</h3>
+            <ul class="list">
+              <li>Mình rất dễ tính và không quan trọng vấn đề <mark class="hl-blue">NOTP/OTP</mark> (mình tự hide được), nhưng mình sẽ không add nếu thấy bạn toxic OTP mình.</li>
+              <li>Dễ acp các bạn chung <mark class="hl-blue">fandoms/ships/sở thích</mark> hơn.</li>
+              <li>Hạn chế add các bạn <mark class="hl-blue">dưới 14 tuổi</mark>.</li>
+              <li>Mình <mark class="hl-blue">multilingual</mark> và thường xuyên dùng <mark class="hl-blue">lowercase</mark>.</li>
+              <li><mark class="hl-blue">Proshipper, multishipper</mark> (trong một số fandom), hầu như luôn ăn <mark class="hl-blue">switch</mark> (có một số ngoại lệ).</li>
+            </ul>
+            </div>
+
+            
+          </div>
+        </section>
+      </div>
+
+      <footer class="footer">
+        © <span id="year"></span> HTML template by Lis, do not use without my permission.
+      </footer>
+    </section>
+  </main>
+
+  <!-- image modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-bg" data-close></div>
+    <figure class="modal-box">
+      <button class="modal-close" data-close aria-label="Close">✕</button>
+      <img id="modalImg" alt="Expanded image" />
+      <figcaption id="modalCap"></figcaption>
+    </figure>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
