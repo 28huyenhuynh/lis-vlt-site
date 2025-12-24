@@ -1401,7 +1401,7 @@ html[data-theme="dark"] a:hover{color:#8bf0ff}
 
   /* 2) Light theme: */
   html, body{
-    background: #dbf5fe !important; /* xanh nhạt */
+    background: #dff3ff !important; /* xanh nhạt */
   }
 
   /* 3) Dark theme: đen tím (solid) */
