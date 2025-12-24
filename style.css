@@ -1387,11 +1387,36 @@ html[data-theme="dark"] a:hover{color:#8bf0ff}
   object-position: center;
 }
 
+/* ===========================
+   MOBILE: FIX nền bị xám (iOS)
+   =========================== */
 @media (max-width: 520px){
-  .vignette{ opacity: .45; }
-  .grid{ opacity: .25; }
-  .noise{ opacity: .15; }
+  .noise{
+    mix-blend-mode: normal !important;
+    opacity: .08 !important;
+  }
+
+  .vignette{
+    opacity: .12 !important;
+    background: radial-gradient(ellipse at 50% 30%, transparent 55%, rgba(45,27,61,.08) 100%) !important;
+  }
+
+  /* grid cũng giảm */
+  .grid{ opacity: .12 !important; }
+
+.noise{ display:none !important; } *
 }
 
+/* DARK + mobile cũng cần làm nhẹ lại */
+@media (max-width: 520px){
+  html[data-theme="dark"] .noise{
+    mix-blend-mode: normal !important;
+    opacity: .06 !important;
+  }
+  html[data-theme="dark"] .vignette{
+    opacity: .20 !important;
+    background: radial-gradient(ellipse at 50% 30%, transparent 55%, rgba(0,0,0,.25) 100%) !important;
+  }
+}
 
 
