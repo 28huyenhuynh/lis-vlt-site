@@ -1388,7 +1388,7 @@ html[data-theme="dark"] a:hover{color:#8bf0ff}
 }
 
 /* ===========================
-   MOBILE: FIX nền bị xám (iOS)
+MOBILE: FIX nền bị xám (iOS)
    =========================== */
 @media (max-width: 520px){
   .noise{
